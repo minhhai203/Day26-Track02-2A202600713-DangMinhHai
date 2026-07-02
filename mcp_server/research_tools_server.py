@@ -98,6 +98,17 @@ async def list_tools() -> list[Tool]:
                 "required": ["text"],
             },
         ),
+        Tool(
+            name="count_words",
+            description="Đếm số lượng từ trong một văn bản.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "text": {"type": "string", "description": "Văn bản cần đếm từ"},
+                },
+                "required": ["text"],
+            },
+        ),
     ]
     return [tool for tool in all_tools if tool.name in allowed]
 
@@ -163,6 +174,9 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
             int(arguments.get("max_bullets", 3)),
         )
         return [TextContent(type="text", text="\n".join(bullets))]
+    if name == "count_words":
+        words_count = len(arguments["text"].split())
+        return [TextContent(type="text", text=str(words_count))]
     raise ValueError(f"Tool không xác định: {name}")
 
 

@@ -1,0 +1,71 @@
+- generic [ref=f4e3]:
+  - generic [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - button "Toggle side panel" [ref=f4e6] [cursor=pointer]:
+        - img [ref=f4e7]: menu
+      - generic [ref=f4e10]:
+        - img "ADK Logo" [ref=f4e11]
+        - generic [ref=f4e13]: Agent Development Kit 2.3.0
+      - generic [ref=f4e14]:
+        - button "orchestrator" [ref=f4e15] [cursor=pointer]:
+          - img [ref=f4e16]: robot_2
+          - generic [ref=f4e17]: orchestrator
+          - img [ref=f4e18]: arrow_drop_down
+        - button [ref=f4e21] [cursor=pointer]:
+          - img [ref=f4e22]: account_tree
+        - generic [ref=f4e25]:
+          - button [disabled]:
+            - img: edit
+    - generic [ref=f4e26]:
+      - generic [ref=f4e27]:
+        - button "10e1e399-9def-436a-86df-fd7f3f72c104" [ref=f4e28] [cursor=pointer]:
+          - img [ref=f4e29]: chat
+          - generic [ref=f4e30]: 10e1e399-9def-436a-86df-fd7f3f72c104
+          - img [ref=f4e31]: arrow_drop_down
+        - button [ref=f4e33] [cursor=pointer]:
+          - img [ref=f4e34]: add_comment
+      - button [ref=f4e36] [cursor=pointer]:
+        - img [ref=f4e37]: light_mode
+    - button "User menu" [ref=f4e40] [cursor=pointer]:
+      - img [ref=f4e41]: account_circle
+  - generic [ref=f4e48]:
+    - generic [ref=f4e54]:
+      - tablist [ref=f4e57]:
+        - generic [ref=f4e58]:
+          - tab "Info" [selected] [ref=f4e59] [cursor=pointer]:
+            - generic [ref=f4e62]: Info
+          - tab "State" [ref=f4e63] [cursor=pointer]:
+            - generic [ref=f4e66]: State
+          - tab "Artifacts" [ref=f4e67] [cursor=pointer]:
+            - generic [ref=f4e70]: Artifacts
+          - tab "Evals" [ref=f4e71] [cursor=pointer]:
+            - generic [ref=f4e74]: Evals
+      - generic [ref=f4e75]:
+        - tabpanel "Info" [ref=f4e76]:
+          - generic [ref=f4e78]: Select an event or trace span to view details
+        - tabpanel [ref=f4e79]
+        - tabpanel [ref=f4e80]
+        - tabpanel [ref=f4e81]
+    - generic [ref=f4e86]:
+      - generic [ref=f4e87]:
+        - radiogroup [ref=f4e88]:
+          - radio "Events" [checked] [ref=f4e89] [cursor=pointer]:
+            - generic [ref=f4e90]: Events
+          - radio "Traces" [ref=f4e91] [cursor=pointer]:
+            - generic [ref=f4e92]: Traces
+        - button "Filter" [ref=f4e94] [cursor=pointer]:
+          - img [ref=f4e95]: add
+          - generic [ref=f4e96]: Filter
+        - button [ref=f4e97] [cursor=pointer]:
+          - img [ref=f4e98]: refresh
+        - button "More options" [ref=f4e101] [cursor=pointer]:
+          - img [ref=f4e102]: more_vert
+      - generic [ref=f4e111]:
+        - button [ref=f4e113] [cursor=pointer]:
+          - img [ref=f4e114]: add
+        - textbox "Type a message..." [active] [ref=f4e118]
+        - generic [ref=f4e120]:
+          - button [ref=f4e123] [cursor=pointer]:
+            - img [ref=f4e124]: call
+          - button [ref=f4e127] [cursor=pointer]:
+            - img [ref=f4e128]: send

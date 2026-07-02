@@ -91,6 +91,16 @@ class GovernanceGuard:
                 )
                 self._log(decision, "mcp_tool_call", query, trace_id)
                 return decision
+            if "password" in query.lower():
+                decision = GovernanceDecision(
+                    verdict=GovernanceVerdict.DENY,
+                    reason="Truy vấn chứa từ khóa nhạy cảm bị cấm ('password')",
+                    actor_id=actor_id,
+                    connection_type=ConnectionType.MCP,
+                    resource=f"mcp:research-tools/{tool_name}",
+                )
+                self._log(decision, "mcp_tool_call", query, trace_id)
+                return decision
 
         if tool_name == "sql_query":
             sql = str(arguments.get("sql", ""))

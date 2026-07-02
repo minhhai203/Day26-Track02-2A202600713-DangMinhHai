@@ -64,3 +64,28 @@ class SemanticRouter:
             return fallback
         name, score = candidates[0]
         return name if score >= self.threshold else fallback
+
+    def route_with_chain(self, request: str, chain: list[str]) -> str:
+        """Thử route chính; nếu điểm < ngưỡng, đi theo chuỗi fallback."""
+        candidates = self.route(request, top_k=1)
+        if candidates and candidates[0][1] >= self.threshold:
+            return candidates[0][0]
+
+        import httpx
+        agent_ports = {
+            "search_agent": 8001,
+            "database_agent": 8002,
+            "synthesis_agent": 8003
+        }
+        for agent_name in chain:
+            if agent_name == "orchestrator":
+                return "orchestrator"
+            port = agent_ports.get(agent_name)
+            if port:
+                try:
+                    r = httpx.get(f"http://localhost:{port}/.well-known/agent-card.json", timeout=0.1)
+                    if r.status_code == 200:
+                        return agent_name
+                except Exception:
+                    pass
+        return "orchestrator"

@@ -1,0 +1,84 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - button "Toggle side panel" [ref=e6] [cursor=pointer]:
+          - img [ref=e7]: menu
+        - generic [ref=e10]:
+          - img "ADK Logo" [ref=e11]
+          - generic [ref=e13]: Agent Development Kit 2.3.0
+        - generic [ref=e14]:
+          - button "orchestrator" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]: robot_2
+            - generic [ref=e17]: orchestrator
+            - img [ref=e18]: arrow_drop_down
+          - button [ref=e21] [cursor=pointer]:
+            - img [ref=e22]: account_tree
+          - generic [ref=e25]:
+            - button [disabled]:
+              - img: edit
+      - generic [ref=e30]:
+        - button "NEW SESSION" [active] [ref=e32] [cursor=pointer]:
+          - img [ref=e33]: chat
+          - generic [ref=e34]: NEW SESSION
+          - img [ref=e35]: arrow_drop_down
+        - button [ref=e37] [cursor=pointer]:
+          - img [ref=e38]: light_mode
+      - button "User menu" [ref=e41] [cursor=pointer]:
+        - img [ref=e42]: account_circle
+    - generic [ref=e45]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]: Select a Session
+          - generic [ref=e138]:
+            - button "Import" [ref=e139]:
+              - img [ref=e140]: upload
+              - generic [ref=e141]: Import
+            - button "View" [ref=e144]:
+              - img [ref=e145]: visibility
+              - generic [ref=e146]: View
+            - button "Close session selector" [ref=e149] [cursor=pointer]:
+              - img [ref=e150]: close
+        - generic [ref=e156]: No sessions found for user 'user'
+      - generic [ref=e49]:
+        - generic [ref=e55]:
+          - tablist [ref=e58]:
+            - generic [ref=e59]:
+              - tab "Info" [selected] [ref=e60] [cursor=pointer]:
+                - generic [ref=e63]: Info
+              - tab "State" [ref=e64] [cursor=pointer]:
+                - generic [ref=e67]: State
+              - tab "Artifacts" [ref=e68] [cursor=pointer]:
+                - generic [ref=e71]: Artifacts
+              - tab "Evals" [ref=e72] [cursor=pointer]:
+                - generic [ref=e75]: Evals
+          - generic [ref=e76]:
+            - tabpanel "Info" [ref=e77]:
+              - generic [ref=e79]: Select an event or trace span to view details
+            - tabpanel [ref=e80]
+            - tabpanel [ref=e81]
+            - tabpanel [ref=e82]
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - radiogroup [ref=e89]:
+              - radio "Events" [checked] [ref=e90] [cursor=pointer]:
+                - generic [ref=e91]: Events
+              - radio "Traces" [ref=e92] [cursor=pointer]:
+                - generic [ref=e93]: Traces
+            - button "Filter" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]: add
+              - generic [ref=e97]: Filter
+            - button [ref=e98] [cursor=pointer]:
+              - img [ref=e99]: refresh
+            - button "More options" [ref=e102] [cursor=pointer]:
+              - img [ref=e103]: more_vert
+          - generic [ref=e112]:
+            - button [ref=e114] [cursor=pointer]:
+              - img [ref=e115]: add
+            - textbox "Type a message..." [ref=e119]
+            - generic [ref=e121]:
+              - button [ref=e124] [cursor=pointer]:
+                - img [ref=e125]: call
+              - button [ref=e128] [cursor=pointer]:
+                - img [ref=e129]: send
+  - generic [ref=e160]: Select a session

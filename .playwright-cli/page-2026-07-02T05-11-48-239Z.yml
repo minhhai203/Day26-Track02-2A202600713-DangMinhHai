@@ -1,0 +1,68 @@
+- generic [ref=f1e3]:
+  - generic [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - button "Toggle side panel" [ref=f1e6] [cursor=pointer]:
+        - img [ref=f1e7]: menu
+      - generic [ref=f1e10]:
+        - img "ADK Logo" [ref=f1e11]
+        - generic [ref=f1e13]: Agent Development Kit 2.3.0
+      - generic [ref=f1e14]:
+        - button "orchestrator" [ref=f1e15] [cursor=pointer]:
+          - img [ref=f1e16]: robot_2
+          - generic [ref=f1e17]: orchestrator
+          - img [ref=f1e18]: arrow_drop_down
+        - button [ref=f1e21] [cursor=pointer]:
+          - img [ref=f1e22]: account_tree
+        - button [ref=f1e26] [cursor=pointer]:
+          - img [ref=f1e27]: edit
+    - generic [ref=f1e30]:
+      - button "c15bee25-a04d-49d0-a865-08186a839159" [ref=f1e32] [cursor=pointer]:
+        - img [ref=f1e33]: chat
+        - generic [ref=f1e34]: c15bee25-a04d-49d0-a865-08186a839159
+        - img [ref=f1e35]: arrow_drop_down
+      - generic [ref=f1e38]: Loading session...
+    - button "User menu" [ref=f1e39] [cursor=pointer]:
+      - img [ref=f1e40]: account_circle
+  - generic [ref=f1e47]:
+    - generic [ref=f1e51]:
+      - progressbar [ref=f1e53]:
+        - img [ref=f1e55]
+        - generic [ref=f1e58]:
+          - img [ref=f1e60]
+          - img [ref=f1e63]
+          - img [ref=f1e66]
+      - generic:
+        - generic:
+          - tablist [ref=f1e70]:
+            - generic [ref=f1e71]:
+              - tab "Info" [selected] [ref=f1e72] [cursor=pointer]:
+                - generic [ref=f1e75]: Info
+              - tab "State" [ref=f1e76] [cursor=pointer]:
+                - generic [ref=f1e79]: State
+              - tab "Artifacts" [ref=f1e80] [cursor=pointer]:
+                - generic [ref=f1e83]: Artifacts
+              - tab "Evals" [ref=f1e84] [cursor=pointer]:
+                - generic [ref=f1e87]: Evals
+          - generic:
+            - tabpanel "Info":
+              - generic [ref=f1e88]: Select an event or trace span to view details
+    - generic [ref=f1e93]:
+      - generic [ref=f1e94]:
+        - radiogroup [ref=f1e95]:
+          - radio "Events" [checked] [ref=f1e96] [cursor=pointer]:
+            - generic [ref=f1e97]: Events
+          - radio "Traces" [ref=f1e98] [cursor=pointer]:
+            - generic [ref=f1e99]: Traces
+        - button "Filter" [ref=f1e101] [cursor=pointer]:
+          - img [ref=f1e102]: add
+          - generic [ref=f1e103]: Filter
+        - button [disabled]:
+          - img: refresh
+        - button "More options" [ref=f1e104] [cursor=pointer]:
+          - img [ref=f1e105]: more_vert
+      - progressbar [ref=f1e110]:
+        - img [ref=f1e112]
+        - generic [ref=f1e115]:
+          - img [ref=f1e117]
+          - img [ref=f1e120]
+          - img [ref=f1e123]

@@ -1,0 +1,175 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]:
+        - button "Toggle side panel" [ref=f4e6] [cursor=pointer]:
+          - img [ref=f4e7]: menu
+        - generic [ref=f4e10]:
+          - img "ADK Logo" [ref=f4e11]
+          - generic [ref=f4e13]: Agent Development Kit 2.3.0
+        - generic [ref=f4e14]:
+          - button "orchestrator" [ref=f4e15] [cursor=pointer]:
+            - img [ref=f4e16]: robot_2
+            - generic [ref=f4e17]: orchestrator
+            - img [ref=f4e18]: arrow_drop_down
+          - button [ref=f4e21] [cursor=pointer]:
+            - img [ref=f4e22]: account_tree
+          - generic [ref=f4e25]:
+            - button [disabled]:
+              - img: edit
+      - generic [ref=f4e26]:
+        - generic [ref=f4e27]:
+          - button "10e1e399-9def-436a-86df-fd7f3f72c104" [ref=f4e28] [cursor=pointer]:
+            - img [ref=f4e29]: chat
+            - generic [ref=f4e30]: 10e1e399-9def-436a-86df-fd7f3f72c104
+            - img [ref=f4e31]: arrow_drop_down
+          - button "New Session" [ref=f4e132] [cursor=pointer]:
+            - img [ref=f4e133]: add_comment
+            - generic [ref=f4e134]: New Session
+        - button [ref=f4e36] [cursor=pointer]:
+          - img [ref=f4e37]: light_mode
+      - button "User menu" [ref=f4e40] [cursor=pointer]:
+        - img [ref=f4e41]: account_circle
+    - generic [ref=f4e48]:
+      - generic [ref=f4e54]:
+        - tablist [ref=f4e57]:
+          - generic [ref=f4e58]:
+            - tab "Info" [selected] [ref=f4e59] [cursor=pointer]:
+              - generic [ref=f4e62]: Info
+            - tab "State" [ref=f4e63] [cursor=pointer]:
+              - generic [ref=f4e66]: State
+            - tab "Artifacts" [ref=f4e67] [cursor=pointer]:
+              - generic [ref=f4e70]: Artifacts
+            - tab "Evals" [ref=f4e71] [cursor=pointer]:
+              - generic [ref=f4e74]: Evals
+        - generic [ref=f4e75]:
+          - tabpanel "Info" [ref=f4e76]:
+            - generic [ref=f4e136]:
+              - generic [ref=f4e137]:
+                - group "Select event" [ref=f4e138]:
+                  - generic [ref=f4e141]:
+                    - status [ref=f4e142]: Event 3 of 3
+                    - button "Previous Event" [ref=f4e143] [cursor=pointer]:
+                      - img [ref=f4e144]
+                    - button "Next Event" [disabled] [ref=f4e148]:
+                      - img [ref=f4e149]
+                - button [ref=f4e153] [cursor=pointer]:
+                  - img [ref=f4e154]: remove_selection
+              - generic [ref=f4e157]:
+                - generic [ref=f4e158]:
+                  - button [ref=f4e159] [cursor=pointer]:
+                    - img [ref=f4e160]: info
+                  - button [ref=f4e163] [cursor=pointer]:
+                    - img [ref=f4e164]: account_tree
+                  - button [ref=f4e167] [cursor=pointer]:
+                    - img [ref=f4e168]: input
+                  - button [ref=f4e171] [cursor=pointer]:
+                    - img [ref=f4e172]: output
+                  - button [ref=f4e175] [cursor=pointer]:
+                    - img [ref=f4e176]: analytics
+                  - button [ref=f4e179] [cursor=pointer]:
+                    - img [ref=f4e180]: published_with_changes
+                  - button [ref=f4e183] [cursor=pointer]:
+                    - img [ref=f4e184]: data_object
+                - generic [ref=f4e188]:
+                  - generic [ref=f4e190]:
+                    - generic [ref=f4e191]: "Invocation:"
+                    - button "#1 (DROP TABLE agent_metrics)" [ref=f4e192]:
+                      - generic [ref=f4e194]:
+                        - generic [ref=f4e195]: "#1 (DROP TABLE agent_metrics)"
+                        - img [ref=f4e196]: arrow_drop_down
+                  - generic [ref=f4e199]:
+                    - button [ref=f4e200] [cursor=pointer]:
+                      - img [ref=f4e201]: fullscreen
+                    - img [ref=f4e205]:
+                      - generic [ref=f4e206]:
+                        - generic "orchestrator" [ref=f4e208] [cursor=pointer]:
+                          - generic "Agent" [ref=f4e210]:
+                            - generic [ref=f4e212]: ✦
+                            - generic [ref=f4e213]: orchestrator
+                        - generic "Not run in this invocation" [ref=f4e214]:
+                          - generic "Agent" [ref=f4e216]:
+                            - generic "Not run in this invocation" [ref=f4e217]
+                            - generic "Not run in this invocation" [ref=f4e218]: ✦
+                            - generic "Not run in this invocation" [ref=f4e219]: search_agent
+                        - generic "orchestrator->search_agent" [ref=f4e220]
+                        - generic "Not run in this invocation" [ref=f4e223]:
+                          - generic "Agent" [ref=f4e225]:
+                            - generic "Not run in this invocation" [ref=f4e226]
+                            - generic "Not run in this invocation" [ref=f4e227]: ✦
+                            - generic "Not run in this invocation" [ref=f4e228]: database_agent
+                        - generic "orchestrator->database_agent" [ref=f4e229]
+                        - generic "Not run in this invocation" [ref=f4e232]:
+                          - generic "Agent" [ref=f4e234]:
+                            - generic "Not run in this invocation" [ref=f4e235]
+                            - generic "Not run in this invocation" [ref=f4e236]: ✦
+                            - generic "Not run in this invocation" [ref=f4e237]: synthesis_agent
+                        - generic "orchestrator->synthesis_agent" [ref=f4e238]
+                        - generic "Not run in this invocation" [ref=f4e240]:
+                          - generic "Tool" [ref=f4e242]:
+                            - generic "Not run in this invocation" [ref=f4e243]
+                            - generic "Not run in this invocation" [ref=f4e244]: 🔧
+                            - generic "Not run in this invocation" [ref=f4e245]: McpToolset
+                        - generic "orchestrator->McpToolset" [ref=f4e246]
+                        - generic "Not run in this invocation" [ref=f4e249]:
+                          - generic "Tool" [ref=f4e251]:
+                            - generic "Not run in this invocation" [ref=f4e252]
+                            - generic "Not run in this invocation" [ref=f4e253]: 🔧
+                            - generic "Not run in this invocation" [ref=f4e254]: suggest_routing
+                        - generic "orchestrator->suggest_routing" [ref=f4e255]
+          - tabpanel [ref=f4e79]
+          - tabpanel [ref=f4e80]
+          - tabpanel [ref=f4e81]
+      - generic [ref=f4e86]:
+        - generic [ref=f4e87]:
+          - radiogroup [ref=f4e88]:
+            - radio "Events" [checked] [ref=f4e89] [cursor=pointer]:
+              - generic [ref=f4e90]: Events
+            - radio "Traces" [ref=f4e91] [cursor=pointer]:
+              - generic [ref=f4e92]: Traces
+          - button "Filter" [ref=f4e94] [cursor=pointer]:
+            - img [ref=f4e95]: add
+            - generic [ref=f4e96]: Filter
+          - button [ref=f4e97] [cursor=pointer]:
+            - img [ref=f4e98]: refresh
+          - button "More options" [ref=f4e101] [cursor=pointer]:
+            - img [ref=f4e102]: more_vert
+        - generic [ref=f4e105]:
+          - generic [ref=f4e106]:
+            - generic [ref=f4e258]:
+              - generic [ref=f4e259]: "#1"
+              - paragraph [ref=f4e268]: DROP TABLE agent_metrics
+              - img [ref=f4e271]: person
+            - generic [ref=f4e272]:
+              - generic [ref=f4e273]: "#2"
+              - generic [ref=f4e275]: O
+              - 'button "State: governance_tool_count, governance_total_cost_usd, trace_id, governance_trace_id, task_id" [ref=f4e279]':
+                - img [ref=f4e280]: data_object
+                - generic [ref=f4e281]: "State: governance_tool_count, governance_total_cost_usd, trace_id, governance_trace_id, task_id"
+            - generic [ref=f4e284]:
+              - generic [ref=f4e285]: "#3"
+              - generic [ref=f4e287]: O
+              - generic [ref=f4e291]:
+                - generic [ref=f4e292]: error
+                - generic [ref=f4e295]:
+                  - generic [ref=f4e298]:
+                    - generic [ref=f4e299] [cursor=pointer]: errorCode
+                    - generic [ref=f4e300]: ":"
+                    - generic [ref=f4e302]: "\"_ResourceExhaustedError\""
+                  - generic [ref=f4e305]:
+                    - generic [ref=f4e306] [cursor=pointer]: errorMessage
+                    - generic [ref=f4e307]: ":"
+                    - generic [ref=f4e309]: "\" On how to mitigate this issue, please refer to: https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 46.589587098s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}\""
+          - generic [ref=f4e111]:
+            - button [ref=f4e113] [cursor=pointer]:
+              - img [ref=f4e114]: add
+            - textbox "Type a message..." [active] [ref=f4e118]
+            - generic [ref=f4e120]:
+              - button [ref=f4e123] [cursor=pointer]:
+                - img [ref=f4e124]: call
+              - button [ref=f4e310] [cursor=pointer]:
+                - img [ref=f4e311]: send
+  - generic [ref=f4e320]:
+    - generic [ref=f4e321]: "On how to mitigate this issue, please refer to: https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please c..."
+    - button "OK" [ref=f4e323]:
+      - generic [ref=f4e324]: OK

@@ -1,0 +1,117 @@
+- generic [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - button "Toggle side panel" [ref=f3e6] [cursor=pointer]:
+        - img [ref=f3e7]: menu
+      - generic [ref=f3e10]:
+        - img "ADK Logo" [ref=f3e11]
+        - generic [ref=f3e13]: Agent Development Kit 2.3.0
+      - generic [ref=f3e14]:
+        - button "orchestrator" [ref=f3e15] [cursor=pointer]:
+          - img [ref=f3e16]: robot_2
+          - generic [ref=f3e17]: orchestrator
+          - img [ref=f3e18]: arrow_drop_down
+        - button [ref=f3e21] [cursor=pointer]:
+          - img [ref=f3e22]: account_tree
+        - generic [ref=f3e25]:
+          - button [disabled]:
+            - img: edit
+    - generic [ref=f3e26]:
+      - generic [ref=f3e27]:
+        - button "3b538365-5695-4373-855b-9aeb87697f84" [ref=f3e28] [cursor=pointer]:
+          - img [ref=f3e29]: chat
+          - generic [ref=f3e30]: 3b538365-5695-4373-855b-9aeb87697f84
+          - img [ref=f3e31]: arrow_drop_down
+        - button "New Session" [ref=f3e33] [cursor=pointer]:
+          - img [ref=f3e34]: add_comment
+          - generic [ref=f3e35]: New Session
+      - button [ref=f3e37] [cursor=pointer]:
+        - img [ref=f3e38]: light_mode
+    - button "User menu" [ref=f3e41] [cursor=pointer]:
+      - img [ref=f3e42]: account_circle
+  - generic [ref=f3e49]:
+    - generic [ref=f3e55]:
+      - tablist [ref=f3e58]:
+        - generic [ref=f3e59]:
+          - tab "Info" [selected] [ref=f3e60] [cursor=pointer]:
+            - generic [ref=f3e63]: Info
+          - tab "State" [ref=f3e64] [cursor=pointer]:
+            - generic [ref=f3e67]: State
+          - tab "Artifacts" [ref=f3e68] [cursor=pointer]:
+            - generic [ref=f3e71]: Artifacts
+          - tab "Evals" [ref=f3e72] [cursor=pointer]:
+            - generic [ref=f3e75]: Evals
+      - generic [ref=f3e76]:
+        - tabpanel "Info" [ref=f3e77]:
+          - generic [ref=f3e79]: Select an event or trace span to view details
+        - tabpanel [ref=f3e80]
+        - tabpanel [ref=f3e81]
+        - tabpanel [ref=f3e82]
+    - generic [ref=f3e87]:
+      - generic [ref=f3e88]:
+        - radiogroup [ref=f3e89]:
+          - radio "Events" [checked] [ref=f3e90] [cursor=pointer]:
+            - generic [ref=f3e91]: Events
+          - radio "Traces" [ref=f3e92] [cursor=pointer]:
+            - generic [ref=f3e93]: Traces
+        - button "Filter" [ref=f3e95] [cursor=pointer]:
+          - img [ref=f3e96]: add
+          - generic [ref=f3e97]: Filter
+        - button [ref=f3e98] [cursor=pointer]:
+          - img [ref=f3e99]: refresh
+        - button "More options" [ref=f3e102] [cursor=pointer]:
+          - img [ref=f3e103]: more_vert
+      - generic [ref=f3e106]:
+        - generic [ref=f3e107]:
+          - generic [ref=f3e108]:
+            - generic [ref=f3e109]: "#1"
+            - paragraph [ref=f3e118]: "Bước 1: dùng search_documents tìm MCP. Bước 2: dùng sql_query SELECT * FROM agent_metrics. Bước 3: tóm tắt báo cáo ngắn."
+            - img [ref=f3e121]: person
+          - generic [ref=f3e122]:
+            - generic [ref=f3e123]: "#2"
+            - generic [ref=f3e125]: O
+            - 'button "State: governance_tool_count, governance_total_cost_usd, trace_id, governance_trace_id, task_id" [ref=f3e129]':
+              - img [ref=f3e130]: data_object
+              - generic [ref=f3e131]: "State: governance_tool_count, governance_total_cost_usd, trace_id, governance_trace_id, task_id"
+          - generic [ref=f3e134]:
+            - generic [ref=f3e135]: "#3"
+            - img [ref=f3e138]: robot_2
+            - generic [ref=f3e139]:
+              - paragraph [ref=f3e147]:
+                - text: Tôi hiểu bạn muốn tôi thực hiện một chuỗi các bước. Trước tiên, tôi sẽ sử dụng
+                - code [ref=f3e148]: search_documents
+                - text: để tìm MCP. Sau đó, tôi sẽ thực hiện truy vấn SQL
+                - code [ref=f3e149]: SELECT * FROM agent_metrics
+                - text: . Cuối cùng, tôi sẽ tóm tắt báo cáo.
+              - button "search_documents(\"MCP\")" [ref=f3e153]:
+                - img [ref=f3e154]: bolt
+                - generic [ref=f3e155]: search_documents("MCP")
+          - generic [ref=f3e158]:
+            - generic [ref=f3e159]: "#4"
+            - img [ref=f3e162]: robot_2
+            - button "search_documents" [ref=f3e167]:
+              - img [ref=f3e168]: check
+              - generic [ref=f3e169]: search_documents
+          - generic [ref=f3e172]:
+            - generic [ref=f3e173]: "#5"
+            - generic [ref=f3e175]: O
+            - generic [ref=f3e179]:
+              - generic [ref=f3e180]: error
+              - generic [ref=f3e183]:
+                - generic [ref=f3e186]:
+                  - generic [ref=f3e187] [cursor=pointer]: errorCode
+                  - generic [ref=f3e188]: ":"
+                  - generic [ref=f3e190]: "\"_ResourceExhaustedError\""
+                - generic [ref=f3e193]:
+                  - generic [ref=f3e194] [cursor=pointer]: errorMessage
+                  - generic [ref=f3e195]: ":"
+                  - generic [ref=f3e197]: "\" On how to mitigate this issue, please refer to: https://google.github.io/adk-docs/agents/models/google-gemini/#error-code-429-resource_exhausted 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 41.546085116s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}\""
+        - generic [ref=f3e202]:
+          - button [ref=f3e204] [cursor=pointer]:
+            - img [ref=f3e205]: add
+          - textbox "Type a message..." [ref=f3e209]
+          - generic [ref=f3e211]:
+            - button [ref=f3e214] [cursor=pointer]:
+              - img [ref=f3e215]: call
+            - button [ref=f3e218] [cursor=pointer]:
+              - img [ref=f3e219]: send
